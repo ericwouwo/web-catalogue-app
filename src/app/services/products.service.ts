@@ -16,7 +16,6 @@ export class ProductsService{
 
     // @ts-ignore
     let host = environment.host;
-    console.log(this.http.get<Product[]>(host+"/products"));
     return this.http.get<Product[]>(host+"/products");
   }
 
